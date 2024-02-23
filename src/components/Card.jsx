@@ -30,10 +30,11 @@ const Card = ({ i, title, icon, color, progress, range, targetScale }) => {
             </h2>
             <hr className="mx-10 lg:mx-32 mt-5 border-black" />
             <div className="flex flex-wrap justify-evenly lg:justify-center items-center px-2 py-2 mt-2 lg:px-20 lg:py-16 lg:mt-2">
-              {icon.map((src) => {
+              {icon.map((src, i) => {
                 return (
                   <motion.div
                     style={{ opacity: scrollYProgress, scale: imageScale }}
+                    key={i}
                     className="lg:w-40 lg:px-5 lg:mt-0 w-[75px] mx-5 mt-5"
                   >
                     <img src={Object.values(src.src)} />

@@ -15,27 +15,27 @@ const Footer = () => {
         </div>
       </div> */}
       <div className="flex flex-row justify-between items-center mt-3 lg:mt-20 text-slate-800">
-        <div className="flex justify-start border-2 border-slate-800 rounded-3xl lg:mr-0 mr-5">
+        <div className="flex justify-start border-2 border-slate-800 shadow-2xl rounded-3xl lg:mr-0 mr-5 bg-yellow-200">
           <Magnetic>
-            <div className="hidden cursor-pointer w-30 lg:w-[180px] lg:h-[200px] lg:flex items-center">
+            <div className="hidden cursor-pointer w-30 lg:pt-10 lg:w-[180px] lg:h-[200px] lg:flex items-center">
               <a href="https://maps.app.goo.gl/fEEkjon7nciuoXdh9">
                 {" "}
                 <img src={location} width={200} height={200} />
               </a>
             </div>
           </Magnetic>
-          <div className="p-2 pr-5 lg:pr-5 lg:p-10 ">
+          <div className="p-5 pr-3 lg:pr-5 lg:p-10 ">
             <h3 className="text-2xl lg:text-4xl font-bold font-damion">
               Willow Homestay
             </h3>
             <h4 className="text-xl lg:text-3xl font-semibold">Address:</h4>
-            <p className="text-sm lg:text-2xl text-white ">
+            <p className="text-sm lg:text-2xl text-slate-800 ">
               No.11, H-Lane, 12th Cross, Krishna Nagar
             </p>
-            <p className=" text-sm lg:text-2xl text-white ">
+            <p className=" text-sm lg:text-2xl text-slate-800 ">
               Puducherry - 605008
             </p>
-            <span className="text-l lg:text-2xl text-white ">India</span>
+            <span className="text-l lg:text-2xl text-slate-800 ">India</span>
           </div>
         </div>
         <div className="w-[200px] h-[300px]  lg:w-[400px] lg:h-[350px] border-2 border-black rounded-3xl overflow-hidden flex justify-between shadow-2xl">
@@ -44,9 +44,9 @@ const Footer = () => {
             width="400"
             height="350"
             style={{ border: 0 }}
-            allowfullscreen=""
+            // allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            // referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
@@ -54,20 +54,20 @@ const Footer = () => {
 
       <div className="flex flex-row lg:mb-14 justify-between items-center">
         <div
-          className="text-sm md:text-xl lg:text-3xl lg:p-5 lg:ml-10 p-2 
-        ml-1 border-2 border-slate-800 rounded-3xl lg:mr-0 mr-5"
+          className="text-sm md:text-xl lg:text-3xl lg:p-5 lg:ml-10 p-5 
+        ml-1 border-2 border-slate-800 rounded-3xl lg:mr-0 mr-5 bg-yellow-200 shadow-2xl"
         >
           <p className="font-semibold">Phone: </p>
-          <p className="text-white text-2xl">8220791901</p>
+          <p className="text-slate-800 ">8220791901</p>
           <br />
           <p className="font-semibold"> Email:</p>
-          <p className="text-white  text-2xl"> vsara25597@gmail.com</p>
+          <p className="text-slate-800  "> vsara25597@gmail.com</p>
         </div>
         <div>
           <Magnetic>
             <button
               className="border-2 rounded-2xl border-slate-800 p-1 px-2 text-sm mr-5 lg:p-4 lg:px-10 text-Black
-             bg-yellow-300 shadow-xl  hover:bg-emerald-400 lg:text-3xl lg:mr-20"
+             bg-yellow-200 shadow-xl  hover:bg-emerald-400 lg:text-3xl lg:mr-20"
             >
               <a href="/">Review Us Here</a>
             </button>
@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
         <Magnetic>
           <p className="p-2 lg:p-10 lg:mt-5 ">
-            <span className="flex flex-col  font-damion text-slate-800 justify-center items-center pb-2 text-2xl">
+            <span className="flex flex-col  text-slate-800 justify-center items-center pb-2 text-2xl">
               Social
             </span>
             <a

@@ -1,3 +1,4 @@
+"use client";
 import Home from "./components/Home";
 import About from "./components/About";
 import Aminities from "./components/Aminities";
@@ -5,11 +6,15 @@ import Gallery from "./components/gallery/Gallery.jsx";
 import NavBar from "./components/NavBar";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Footer from "./components/Footer.jsx";
+import Preloader from "./components/Preloader/Preloader.jsx";
+import { AnimatePresence } from "framer-motion";
+
 // import Sticky from "./components/stickyCursor/Sticky.jsx";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
   gsap.registerPlugin(ScrollTrigger);
   // let roomsContainer = useRef(null);
   // let spaContainer = useRef(null);
@@ -50,7 +55,6 @@ function App() {
   //   });
   // });
 
-  // const lenisRef = useRef();
   useEffect(() => {
     // ScrollTrigger.defaults({
     //   scroller: ".main",
@@ -59,8 +63,6 @@ function App() {
       const sectionColor = document.querySelectorAll("[data-bgcolor]");
       sectionColor.forEach((colorSection, i) => {
         const prevBgColor = i === 0 ? " " : sectionColor[i - 1].dataset.bgcolor;
-        console.log(colorSection.id);
-
         ScrollTrigger.create({
           trigger: colorSection,
           // scroller: ".main",
@@ -78,6 +80,10 @@ function App() {
               overwrite: "auto",
             }),
         });
+        setTimeout(() => {
+          setIsLoading(false);
+          window.scrollTo(0, 0);
+        }, 2000);
       });
     });
 
@@ -86,6 +92,9 @@ function App() {
 
   return (
     <div id="main" className="main min-h-full w-full flex flex-col bg-white">
+      <AnimatePresence mode="wait">
+        {isLoading && <Preloader />}
+      </AnimatePresence>
       <NavBar
       // sectionRefs={sectionRefs.current}
       />
@@ -107,7 +116,8 @@ function App() {
       <section
         id="aminities"
         className="relative flex items-center justify-center "
-        data-bgcolor="#EEE0C9"
+        // data-bgcolor="#EEE0C9"
+        data-bgcolor="#F5E8DD"
       >
         <Aminities />
       </section>

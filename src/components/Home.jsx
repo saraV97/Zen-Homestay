@@ -10,14 +10,14 @@ const Home = () => {
             Your Escape,{" "}
           </span>
           <div className="text-center">
-            <span className="text-yellow-300 font-logo1">Our Pleasure.</span>
+            <span className="text-yellow-200 font-logo1">Our Pleasure.</span>
           </div>
           <div className="md:hidden flex justify-center pt-20 ">
             {/* <Magnetic> */}
             <a href="#footer">
               <button
                 className=" flex justify-center items-center border-2 rounded-2xl border-slate-700 py-1 px-3
-         text-slate-800  bg-yellow-300  hover:bg-emerald-400 text-xl"
+         text-slate-800  bg-yellow-200  hover:bg-emerald-400 text-xl"
               >
                 <span>Call to Book</span>
               </button>

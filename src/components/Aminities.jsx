@@ -19,7 +19,7 @@ const Aminities = () => {
       <h1 className="m-0 mt-[20px] font-medium leading-[2vw]  text-3xl flex justify-center items-center">
         What we have !
       </h1>
-      <div className="flex justify-center font-logo1 items-centerfont-semibold text-2xl lg:text-4xl pt-5 text-slate-800">
+      <div className="flex justify-center underline font-logo1 items-centerfont-semibold text-2xl lg:text-4xl pt-5 text-slate-800">
         Spacious Two-Bedroom Getaway
       </div>
       {projects.map((project, i) => {

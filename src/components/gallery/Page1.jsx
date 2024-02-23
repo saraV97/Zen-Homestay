@@ -72,7 +72,7 @@ function Page() {
           <Magnetic>
             <button
               className="rounded-3xl border-2 border-black p-5
-             bg-yellow-300 hover:bg-emerald-400 m-18.5 text-3xl"
+             bg-yellow-200 hover:bg-emerald-400 m-18.5 text-3xl"
             >
               <a href="/">View Gallery</a>
             </button>

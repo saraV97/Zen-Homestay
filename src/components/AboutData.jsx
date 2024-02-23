@@ -84,19 +84,25 @@ const AboutData = () => {
         <br />
 
         <p>
-          At Zen Homestay, we pride ourselves on providing a cozy atmosphere and
-          personalized hospitality. Our rooms have attached bath along with
-          spacious common hall and kitchen are designed with your comfort in
-          mind. Whether you're traveling solo, with a loved one, or as a family,
-          you'll find our accommodations to be your home away from home.
+          At Zen Homestay, we pride ourselves on providing a{" "}
+          <span className="text-emerald-400">
+            cozy atmosphere and personalized hospitality
+          </span>
+          . Our rooms have attached bath along with spacious common hall and
+          kitchen are designed with your comfort in mind. Whether you're
+          traveling solo, with a loved one, or as a family, you'll find our
+          accommodations to be your home away from home.
         </p>
         <br />
         <p>
-          From our warm hospitality to our convenient location near Serinity
-          beach and Rock beach, Zen Homestay is the perfect base for exploring
-          all that Pondicherry has to offer. Whether you're here for adventure
-          or relaxation, we invite you to experience the tranquility of Zen
-          Homestay during your stay.
+          From our warm hospitality to our convenient{" "}
+          <span className="text-sky-600">
+            location near Serinity beach and Rock beach
+          </span>
+          , Zen Homestay is the perfect base for exploring all that Pondicherry
+          has to offer. Whether you're here for adventure or relaxation, we
+          invite you to experience the tranquility of Zen Homestay during your
+          stay.
         </p>
         <br />
         <p className="lg:mr-[14vw] lg:ml-0 mr-10 text-emerald-400 text-2xl lg:text-[2rem]">

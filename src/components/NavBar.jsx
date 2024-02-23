@@ -112,8 +112,8 @@ export default function NavBar({ sectionRefs }) {
       <a href="/">
         <div className="">
           {/* <img src={logo} width={300} height={20} className=""></img> */}
-          <h1 className="text-2xl font-damion ml-7 text-slate-800">Zen</h1>
-          <h1 className="text-2xl font-damion ml-8 mt-[-14px] text-slate-800">
+          <h1 className="text-3xl font-damion ml-7 text-slate-800">Zen</h1>
+          <h1 className="text-xl font-damion ml-9 mt-[-14px] text-slate-800">
             Homestay
           </h1>
         </div>
@@ -137,7 +137,7 @@ export default function NavBar({ sectionRefs }) {
           <a href="#footer">
             <button
               className="hidden lg:flex border border-slate-800 rounded-2xl py-1 px-3 mr-7
-         text-slate-800  bg-yellow-300  hover:bg-emerald-400 text-xl shadow-lg"
+         text-slate-800  bg-yellow-200  hover:bg-emerald-400 text-xl shadow-lg"
             >
               <span>Call to Book</span>
             </button>
