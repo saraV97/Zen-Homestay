@@ -105,15 +105,17 @@ export default function NavBar({ sectionRefs }) {
   return (
     <header
       // ref={navBar}
-      className="flex justify-between items-center w-80 lg:w-6/12 h-[60px]
-       text-slate-800 bg-opacity-10 backdrop-blur-sm border border-slate-800 rounded-3xl shadow-xl
-     fixed z-50 top-5 left-14 lg:left-1/4 "
+      className="flex justify-between items-center w-80 md:w-8/12 lg:w-6/12 h-[70px]
+       text-slate-800 bg-slate-400 bg-opacity-40
+       backdrop-blur-sm 
+        border border-slate-800 rounded-3xl shadow-xl
+     fixed z-50 top-5 left-8 xsm:left-14 md:left-40 lg:left-1/4 "
     >
       <a href="/">
         <div className="">
           {/* <img src={logo} width={300} height={20} className=""></img> */}
           <h1 className="text-3xl font-damion ml-7 text-slate-800">Zen</h1>
-          <h1 className="text-xl font-damion ml-9 mt-[-14px] text-slate-800">
+          <h1 className="text-xl font-grotesk ml-9 mt-[-14px] text-slate-800">
             Homestay
           </h1>
         </div>
@@ -136,7 +138,7 @@ export default function NavBar({ sectionRefs }) {
         <Magnetic>
           <a href="#footer">
             <button
-              className="hidden lg:flex border border-slate-800 rounded-2xl py-1 px-3 mr-7
+              className="hidden lg:flex border border-slate-800 rounded-xl py-1 px-3 mr-7
          text-slate-800  bg-yellow-200  hover:bg-emerald-400 text-xl shadow-lg"
             >
               <span>Call to Book</span>

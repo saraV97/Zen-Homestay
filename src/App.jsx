@@ -70,12 +70,12 @@ function App() {
           end: "bottom 0%",
           // markers: "true",
           onEnter: () =>
-            gsap.to(".main", {
+            gsap.to("section", {
               backgroundColor: colorSection.dataset.bgcolor,
               overwrite: "auto",
             }),
           onLeaveBack: () =>
-            gsap.to(".main", {
+            gsap.to("section", {
               backgroundColor: prevBgColor,
               overwrite: "auto",
             }),
@@ -91,7 +91,10 @@ function App() {
   }, []);
 
   return (
-    <div id="main" className="main min-h-full w-full flex flex-col bg-white">
+    <div
+      id="main"
+      className="main min-h-full w-full flex flex-col bg-white z-2"
+    >
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
@@ -100,7 +103,8 @@ function App() {
       />
       <section
         id="home"
-        className="min-h-screen w-full relative flex items-center justify-center custom-bg-class bg-cover bg-center"
+        className="min-h-screen w-full  flex items-center justify-center 
+          custom-bg-class bg-cover bg-center sticky top-0 z-1"
         data-bgcolor="#FFFFFF"
       >
         <Home />
@@ -108,7 +112,8 @@ function App() {
       <section
         // forwardedRef={(el) => (sectionRefs.current[0] = el)}
         id="about"
-        className=" min-h-screen w-full relative flex items-center justify-center "
+        className=" min-h-screen w-full relative flex items-center justify-center
+        border-t-2 rounded-t-[5%] "
         data-bgcolor="#F1F0E8"
       >
         <About />
@@ -117,24 +122,27 @@ function App() {
         id="aminities"
         className="relative flex items-center justify-center "
         // data-bgcolor="#EEE0C9"
-        data-bgcolor="#F5E8DD"
+        data-bgcolor="#DBC4F0"
       >
         <Aminities />
       </section>
       <section
         id="gallery"
+        className="relative"
         // className="min-h-screen w-full relative flex items-center justify-center"
-        data-bgcolor="#E9B384"
+        data-bgcolor="#FFE5E5"
       >
         <Gallery />
       </section>
-      <section
+      <sectionFooter
         id="footer"
-        className="min-h-screen w-full relative flex items-center justify-center"
-        data-bgcolor="#96B6C5"
+        className="min-h-screen w-full relative flex items-center justify-center bg-[#FFE5E5]
+        lg:pt-20"
+        // data-bgcolor="#526D82"
+        // data-bgcolor="#96B6C5"
       >
         <Footer />
-      </section>
+      </sectionFooter>
     </div>
   );
 }

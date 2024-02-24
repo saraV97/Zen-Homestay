@@ -54,8 +54,8 @@ function Page() {
       {/* <div className="h-[100vh]"></div> */}
       <div
         ref={container}
-        className="w-[400px] lg:h-[100vh] lg:w-full relative flex gap-[2vw]
-         p-[2vw] mb-10 box-border overflow-hidden m-2 lg:m-0"
+        className="w-[370px] xsm:w-[400px] md:h-[100vh] md:w-full relative flex gap-[2vw]
+         p-[2vw] mb-10 box-border overflow-hidden xsm:m-2 md:m-0"
       >
         <Column images={[images[0], images[1], images[2]]} y={y} />
         <Column images={[images[3], images[4], images[5]]} y={y2} />
@@ -63,7 +63,7 @@ function Page() {
         {/* <Column images={[images[9], images[10], images[11]]} y={y4} /> */}
         <div
           className="lg:flex lg:flex-1 justify-center items-center p-10
-         font-logo1 w-30 relative lg:right-0 lg:top-0 right-[31.5rem] top-[18rem]"
+         font-logo1 w-30 relative lg:right-0 lg:top-0 xsm:right-[31.5rem] xsm:top-[18rem] right-[29rem] "
         >
           <Magnetic>
             <button
@@ -83,7 +83,8 @@ function Page() {
 const Column = ({ images, y = 0 }) => {
   return (
     <motion.div
-      className="relative w-[10%] h-[80%] min-w-[190px] lg:h-[180%] lg:w-[20%] lg:min-w-60 flex flex-col gap-[2vw]
+      className="relative w-[10%] h-[80%] min-w-[175px] xsm:min-w-[190px] md:h-[180%]
+       md:w-[20%] md:min-w-60 flex flex-col gap-[2vw]
        lg:[&>*:nth-child(1)]:top-[-45%]
        lg:[&>*:nth-child(2)]:top-[-45%]
        lg:[&>*:nth-child(3)]:top-[-45%]

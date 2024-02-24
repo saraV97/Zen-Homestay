@@ -22,7 +22,8 @@ const Card = ({ i, title, icon, color, progress, range, targetScale }) => {
       <div className={`h-[100vh] flex items-center justify-center`}>
         <motion.div
           style={{ scale, top: `calc(-5% + ${i * 40}px)` }}
-          className={`${color}  w-[370px] h-[620px] lg:w-[1300px] lg:h-[650px] rounded-3xl relative shadow-2xl border-2 border-slate-800`}
+          className={`${color}  w-[370px] h-[620px] md:w-[550px] lg:w-[1300px] lg:h-[650px] 
+          rounded-3xl relative shadow-2xl border-1 border-slate-800`}
         >
           <div className="">
             <h2 className="flex justify-center items-center pt-10 font-logo1 text-3xl lg:text-4xl text-slate-800">
