@@ -127,7 +127,7 @@ function App() {
       </section>
       <section
         id="gallery"
-        className="relative bg-[#d8e7ed"
+        className="relative bg-[#d8e7ed]"
         // className="min-h-screen w-full relative flex items-center justify-center"
         data-bgcolor="#d8e7ed"
       >
