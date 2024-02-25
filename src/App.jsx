@@ -92,9 +92,11 @@ function App() {
 
   return (
     <div id="main" className="main min-h-full w-full flex flex-col bg-white">
-      <AnimatePresence mode="wait">
-        {isLoading && <Preloader />}
-      </AnimatePresence>
+      <div className="hidden lg:flex">
+        <AnimatePresence mode="wait">
+          {isLoading && <Preloader />}
+        </AnimatePresence>
+      </div>
       <NavBar
       // sectionRefs={sectionRefs.current}
       />
@@ -119,7 +121,7 @@ function App() {
         id="aminities"
         className="relative flex items-center justify-center "
         // data-bgcolor="#EEE0C9"
-        data-bgcolor="#DBC4F0"
+        data-bgcolor="#e6dfed"
       >
         <Aminities />
       </section>
@@ -127,13 +129,13 @@ function App() {
         id="gallery"
         className="relative"
         // className="min-h-screen w-full relative flex items-center justify-center"
-        data-bgcolor="#BED1CF"
+        data-bgcolor="#d8e7ed"
       >
         <Gallery />
       </section>
       <sectionFooter
         id="footer"
-        className="min-h-screen w-full sticky flex items-center justify-center bg-[#BED1CF]
+        className="min-h-screen w-full sticky flex items-center justify-center bg-[#d8e7ed]
         lg:pt-20"
         // data-bgcolor="#526D82"
         // data-bgcolor="#96B6C5"

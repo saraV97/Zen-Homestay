@@ -12,7 +12,6 @@ const words = [
   "Hallå",
   "Guten tag",
   "Hallo",
-  "Welcome",
 ];
 const colors = [
   "#F1F0E8",
