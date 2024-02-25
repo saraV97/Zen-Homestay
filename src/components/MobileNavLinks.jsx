@@ -19,7 +19,7 @@ const MobileNavLinks = ({ link, toggle }) => {
     },
   };
   return (
-    <div className="overflow-hidden hover:text-pink-300">
+    <div className="overflow-hidden hover:text-slate-600">
       <motion.div variants={mobileLinkVar}>
         <a href={`#${link}`} onClick={toggle}>
           {link}

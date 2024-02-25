@@ -112,14 +112,14 @@ function App() {
         // forwardedRef={(el) => (sectionRefs.current[0] = el)}
         id="about"
         className=" min-h-screen w-full relative flex items-center justify-center
-        border-t-2 rounded-t-3xl lg:rounded-t-[5%] "
+        border-t-2 rounded-t-3xl lg:rounded-t-[5%] bg-[#F1F0E8]"
         data-bgcolor="#F1F0E8"
       >
         <About />
       </section>
       <section
         id="aminities"
-        className="relative flex items-center justify-center "
+        className="relative flex items-center justify-center bg-[#e6dfed]"
         // data-bgcolor="#EEE0C9"
         data-bgcolor="#e6dfed"
       >
@@ -127,7 +127,7 @@ function App() {
       </section>
       <section
         id="gallery"
-        className="relative"
+        className="relative bg-[#d8e7ed"
         // className="min-h-screen w-full relative flex items-center justify-center"
         data-bgcolor="#d8e7ed"
       >
