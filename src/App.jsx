@@ -91,10 +91,7 @@ function App() {
   }, []);
 
   return (
-    <div
-      id="main"
-      className="main min-h-full w-full flex flex-col bg-white z-2"
-    >
+    <div id="main" className="main min-h-full w-full flex flex-col bg-white">
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
       </AnimatePresence>
@@ -103,8 +100,8 @@ function App() {
       />
       <section
         id="home"
-        className="min-h-screen w-full  flex items-center justify-center 
-          custom-bg-class bg-cover bg-center sticky top-0 z-1"
+        className="min-h-screen w-full flex items-center justify-center 
+          custom-bg-class bg-cover bg-center sticky top-0 "
         data-bgcolor="#FFFFFF"
       >
         <Home />
@@ -113,7 +110,7 @@ function App() {
         // forwardedRef={(el) => (sectionRefs.current[0] = el)}
         id="about"
         className=" min-h-screen w-full relative flex items-center justify-center
-        border-t-2 rounded-t-[5%] "
+        border-t-2 rounded-t-3xl lg:rounded-t-[5%] "
         data-bgcolor="#F1F0E8"
       >
         <About />
@@ -130,16 +127,17 @@ function App() {
         id="gallery"
         className="relative"
         // className="min-h-screen w-full relative flex items-center justify-center"
-        data-bgcolor="#FFE5E5"
+        data-bgcolor="#BED1CF"
       >
         <Gallery />
       </section>
       <sectionFooter
         id="footer"
-        className="min-h-screen w-full relative flex items-center justify-center bg-[#FFE5E5]
+        className="min-h-screen w-full sticky flex items-center justify-center bg-[#BED1CF]
         lg:pt-20"
         // data-bgcolor="#526D82"
         // data-bgcolor="#96B6C5"
+        // bg-[#FFE5E5]
       >
         <Footer />
       </sectionFooter>

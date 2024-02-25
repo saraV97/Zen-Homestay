@@ -5,14 +5,14 @@ import Magnetic from "../Magnetic/index";
 import FullGallery from "./FullGallery";
 
 const images = [
-  "1.jpg",
-  "2.jpg",
-  "3.jpg",
-  "4.jpg",
-  "5.jpg",
-  "6.jpg",
-  "7.jpg",
-  "8.jpg",
+  "1.webp",
+  "2.webp",
+  "3.webp",
+  "4.webp",
+  "5.webp",
+  "6.webp",
+  "7.webp",
+  "8.webp",
 ];
 
 function Page() {
@@ -55,7 +55,7 @@ function Page() {
       <div
         ref={container}
         className="w-[370px] xsm:w-[400px] md:h-[100vh] md:w-full relative flex gap-[2vw]
-         p-[2vw] mb-10 box-border overflow-hidden xsm:m-2 md:m-0"
+         p-[2vw] mb-10 box-border overflow-hidden xsm:m-2 md:m-0 transform-gpu"
       >
         <Column images={[images[0], images[1], images[2]]} y={y} />
         <Column images={[images[3], images[4], images[5]]} y={y2} />

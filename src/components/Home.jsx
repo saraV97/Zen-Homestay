@@ -5,8 +5,8 @@ const Home = () => {
   return (
     <div name="home" className="">
       <div>
-        <div className="w-full text-6xl lg:text-[8vw] leading-[1.1] py-40 px-5 lg:px-80">
-          <span className="text-left font-bold font-grotesk">
+        <div className="w-full text-6xl lg:text-[10vw] leading-[1.1] py-40 px-5 lg:px-80">
+          <span className="text-left font-bold text-white font-grotesk">
             Your Escape,{" "}
           </span>
           <div className="text-center">

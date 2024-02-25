@@ -54,20 +54,20 @@ export default function NavBar({ sectionRefs }) {
   // });
 
   const links = [
+    // {
+    //   id: 1,
+    //   link: "home",
+    // },
     {
       id: 1,
-      link: "home",
-    },
-    {
-      id: 2,
       link: "about",
     },
     {
-      id: 3,
+      id: 2,
       link: "aminities",
     },
     {
-      id: 4,
+      id: 3,
       link: "gallery",
     },
   ];
@@ -111,25 +111,29 @@ export default function NavBar({ sectionRefs }) {
         border border-slate-800 rounded-3xl shadow-xl
      fixed z-50 top-5 left-8 xsm:left-14 md:left-40 lg:left-1/4 "
     >
-      <a href="/">
+      <a href="/" className="ml-5 flex justify-center items-center">
+        <p className="flex ">
+          <img src={rooficon} alt="" width="30" height="30" />
+        </p>
         <div className="">
           {/* <img src={logo} width={300} height={20} className=""></img> */}
-          <h1 className="text-3xl font-damion ml-7 text-slate-800">Zen</h1>
-          <h1 className="text-xl font-grotesk ml-9 mt-[-14px] text-slate-800">
+          <h1 className="text-3xl font-damion  text-slate-800">Zen</h1>
+          <h1 className="text-xl font-grotesk ml-4 mt-[-14px] text-slate-800">
             Homestay
           </h1>
         </div>
       </a>
 
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex items-center">
         {links.map(({ id, link }) => [
           <Magnetic>
             <li
               key={id}
-              className="px-5 cursor-pointer lg:text-xl md:text-xl text-Black
-         hover:text-black"
+              className="group px-5 cursor-pointer lg:text-xl md:text-xl text-Black
+         hover:text-black "
             >
               <a href={`#${link}`}>{link}</a>
+              <div className="indicator transition duration-300 ease-in-out group-hover:scale-100"></div>
             </li>
           </Magnetic>,
         ])}
@@ -141,14 +145,18 @@ export default function NavBar({ sectionRefs }) {
               className="hidden lg:flex border border-slate-800 rounded-xl py-1 px-3 mr-7
          text-slate-800  bg-yellow-200  hover:bg-emerald-400 text-xl shadow-lg"
             >
-              <span>Call to Book</span>
+              <span
+              // className="ptag hover:text-white"
+              >
+                Call to Book
+              </span>
             </button>
           </a>
         </Magnetic>
       </div>
       <div
         // ref={ref}
-        className="cursor-pointer md:hidden text-md p-10 text-slate-800 font-logo1 text-2xl"
+        className="cursor-pointer md:hidden border border-slate-800 rounded-xl text-md mr-5 px-2 py-1 text-slate-800 font-logo1 text-2xl"
         onClick={toggleMenu}
       >
         Menu
@@ -172,7 +180,7 @@ export default function NavBar({ sectionRefs }) {
                   <img src={rooficon} alt="" width="40" height="40" />
                 </p>
                 <p
-                  className="cursor-pointer text-md text-slate-800"
+                  className="cursor-pointer text-md text-slate-800 px-2 pt-2 border border-slate-800 rounded-xl"
                   onClick={toggleMenu}
                 >
                   Close
