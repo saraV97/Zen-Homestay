@@ -13,17 +13,17 @@ const words = [
   "Guten tag",
   "Hallo",
 ];
-const colors = [
-  "#F1F0E8",
-  "#F5E8DD",
-  "#E9B384",
-  // "Olà",
-  // "やあ",
-  // "Hallå",
-  // "Guten tag",
-  // "Hallo",
-  // "Welcome",
-];
+// const colors = [
+//   "#F1F0E8",
+//   "#F5E8DD",
+//   "#E9B384",
+//   // "Olà",
+//   // "やあ",
+//   // "Hallå",
+//   // "Guten tag",
+//   // "Hallo",
+//   // "Welcome",
+// ];
 
 export default function Index() {
   const [index, setIndex] = useState(0);

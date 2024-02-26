@@ -6,7 +6,7 @@ import Gallery from "./components/gallery/Gallery.jsx";
 import NavBar from "./components/NavBar";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "./components/Footer.jsx";
 import Preloader from "./components/Preloader/Preloader.jsx";
 import { AnimatePresence } from "framer-motion";
@@ -16,44 +16,6 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   gsap.registerPlugin(ScrollTrigger);
-  // let roomsContainer = useRef(null);
-  // let spaContainer = useRef(null);
-  // let mainContainer = useRef(null);
-
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
-
-  //   //spa
-  //   ScrollTrigger.create({
-  //     trigger: "#aminities",
-  //     markers: true,
-  //     start: "top 50%",
-  //     end: "bottom 80%",
-
-  //     onEnter: () => {
-  //       gsap.to(".main", { duration: 1.0, backgroundColor: "#CDFADB" });
-  //     },
-
-  //     onLeaveBack: () => {
-  //       gsap.to(".main", { duration: 1.0, backgroundColor: "#F6FDC3" });
-  //     },
-  //   });
-
-  //   ScrollTrigger.create({
-  //     trigger: "#gallery",
-  //     markers: true,
-  //     start: "top 50%",
-  //     end: "bottom 50%",
-
-  //     onEnter: () => {
-  //       gsap.to(".main", { duration: 1.0, backgroundColor: "#F6FDC3" });
-  //     },
-
-  //     onLeaveBack: () => {
-  //       gsap.to(".main", { duration: 1.0, backgroundColor: "#CDFADB" });
-  //     },
-  //   });
-  // });
 
   useEffect(() => {
     // ScrollTrigger.defaults({
@@ -93,9 +55,9 @@ function App() {
   return (
     <div id="main" className="main min-h-full w-full flex flex-col bg-white">
       <div className="hidden lg:flex">
-        <AnimatePresence mode="wait">
+        {/* <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
-        </AnimatePresence>
+        </AnimatePresence> */}
       </div>
       <NavBar
       // sectionRefs={sectionRefs.current}

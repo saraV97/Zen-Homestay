@@ -1,10 +1,10 @@
 "use client";
 import { useRef } from "react";
-
 import Picture1 from "../assets/4.webp";
 import Picture2 from "../assets/5.webp";
 import Picture3 from "../assets/6.webp";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { titleVariants1, titleVariants2 } from "./Animations";
 
 const word = "with framer-motion";
 
@@ -33,15 +33,30 @@ const AboutData = () => {
     },
   ];
 
+  // const ourText = new splitType(".reveal", { types: "chars" });
+  // const chars = ourText.chars;
+
   return (
     <div ref={container} className="mt-16 mb-20">
       <div className="pt-14">
-        <motion.h1 className="text-5xl flex justify-center items-center font-semibold text-slate-800">
+        <motion.h1
+          variants={titleVariants1}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className="text-5xl flex justify-center items-center font-semibold text-slate-800"
+        >
           About Us
         </motion.h1>
-        <h1 className="m-0 mt-[10px] font-medium leading-[2vw]  text-3xl flex justify-center items-center">
+        <motion.h1
+          variants={titleVariants2}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          className="m-0 mt-[10px] font-medium leading-[2vw]  text-3xl flex justify-center items-center"
+        >
           Who are we ?
-        </h1>
+        </motion.h1>
       </div>
       <div className="">
         <div className=" w-[100%] justify-center relative mt-[12vh] hidden lg:flex">

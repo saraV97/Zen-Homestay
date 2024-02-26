@@ -53,6 +53,21 @@ export default function NavBar({ sectionRefs }) {
   //   });
   // });
 
+  gsap.fromTo(
+    ".nav",
+    {
+      y: -100,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      delay: 2,
+      opacity: 1,
+      duration: 2,
+      ease: "power4.out",
+    }
+  );
+
   const links = [
     // {
     //   id: 1,
@@ -105,7 +120,7 @@ export default function NavBar({ sectionRefs }) {
   return (
     <header
       // ref={navBar}
-      className="flex justify-between items-center w-80 md:w-8/12 lg:w-6/12 h-[70px]
+      className="nav flex justify-between items-center w-80 md:w-8/12 lg:w-6/12 h-[70px]
        text-slate-800 bg-slate-400 bg-opacity-40
        backdrop-blur-sm 
         border border-slate-800 rounded-3xl shadow-xl

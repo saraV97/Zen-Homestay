@@ -1,16 +1,42 @@
 import React from "react";
+
 import Magnetic from "../components/Magnetic/index";
-// import homeImg from "../assets/pexels1.jpg";
+import { titleVariants1 } from "./Animations";
+import { motion } from "framer-motion";
+import { gsap } from "gsap";
+import splitType from "https://cdn.skypack.dev/split-type@0.3.3";
+
 const Home = () => {
+  const ourText = new splitType(".reveal", { types: "chars" });
+  const chars = ourText.chars;
+
+  gsap.fromTo(
+    chars,
+    {
+      y: 100,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      delay: 1,
+      opacity: 1,
+      stagger: 0.05,
+      duration: 2,
+      ease: "power4.out",
+    }
+  );
+
   return (
     <div name="home" className="">
       <div>
         <div className="w-full text-6xl lg:text-[10vw] leading-[1.1] py-40 px-5 lg:px-80">
-          <span className="text-left font-bold text-white font-grotesk">
+          <span className="reveal text-left font-bold text-white font-grotesk clipath">
             Your Escape,{" "}
           </span>
           <div className="text-center">
-            <span className="text-yellow-200 font-logo1">Our Pleasure.</span>
+            <span className="text-yellow-200 font-logo1 reveal">
+              Our Pleasure.
+            </span>
           </div>
           <div className="lg:hidden flex justify-center pt-20 ">
             {/* <Magnetic> */}
@@ -19,7 +45,7 @@ const Home = () => {
                 className=" flex justify-center items-center border-2 rounded-2xl border-slate-700 py-1 px-3
            text-slate-800  bg-yellow-200  hover:bg-emerald-400 text-xl"
               >
-                <span>Call to Book</span>
+                <p>Call to Book</p>
               </button>
             </a>
             {/* </Magnetic> */}
