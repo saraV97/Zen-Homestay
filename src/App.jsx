@@ -55,9 +55,9 @@ function App() {
   return (
     <div id="main" className="main min-h-full w-full flex flex-col bg-white">
       <div className="hidden lg:flex">
-        {/* <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
-        </AnimatePresence> */}
+        </AnimatePresence>
       </div>
       <NavBar
       // sectionRefs={sectionRefs.current}
@@ -73,7 +73,7 @@ function App() {
       <section
         // forwardedRef={(el) => (sectionRefs.current[0] = el)}
         id="about"
-        className=" min-h-screen w-full relative flex items-center justify-center
+        className="min-h-screen w-full relative flex items-center justify-center
         border-t-2 rounded-t-3xl lg:rounded-t-[5%] bg-[#F1F0E8]"
         data-bgcolor="#F1F0E8"
       >
@@ -97,7 +97,7 @@ function App() {
       </section>
       <sectionFooter
         id="footer"
-        className="min-h-screen w-full sticky flex items-center justify-center bg-[#d8e7ed]
+        className="min-h-screen w-full relative flex items-center justify-center bg-[#d8e7ed]
         lg:pt-20"
         // data-bgcolor="#526D82"
         // data-bgcolor="#96B6C5"

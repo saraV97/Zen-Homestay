@@ -1,14 +1,14 @@
 "use client";
-import React, { forwardRef, useRef, useEffect } from "react";
+import React from "react";
 import socialicon from "../assets/instagram.png";
 import rooficon from "../assets/roofing.png";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import MobileNavLinks from "./MobileNavLinks";
 import Magnetic from "./Magnetic/index";
-import Lenis from "@studio-freight/lenis";
+// import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function NavBar({ sectionRefs }) {
   // const navBar = useRef(null);
@@ -65,6 +65,7 @@ export default function NavBar({ sectionRefs }) {
       opacity: 1,
       duration: 2,
       ease: "power4.out",
+      toggleActions: "play none none none",
     }
   );
 

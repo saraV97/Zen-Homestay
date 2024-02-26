@@ -46,13 +46,13 @@ const Footer = () => {
         </div>
         <div
           className="w-[200px] h-[300px]  lg:w-[400px] lg:h-[350px]
-         border-4 border-[#F2EFE5] rounded-3xl overflow-hidden flex justify-between shadow-2xl"
+         border-4 border-[#F2EFE5]  rounded-3xl overflow-hidden flex justify-between shadow-2xl"
         >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d692.2358711483987!2d79.82173234736366!3d11.951416819620121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDU3JzA1LjkiTiA3OcKwNDknMTguNiJF!5e0!3m2!1sen!2sin!4v1708607087012!5m2!1sen!2sin"
             width="400"
             height="350"
-            style={{ border: 0 }}
+            style={{ border: 0, borderRadius: 20 }}
             // allowfullscreen=""
             loading="lazy"
             // referrerpolicy="no-referrer-when-downgrade"

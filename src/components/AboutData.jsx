@@ -83,7 +83,11 @@ const AboutData = () => {
           })}
         </div>
         <motion.div
-          style={{ y: sm }}
+          variants={titleVariants1}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+          // style={{ y: sm }}
           className="flex flex-col relative justify-end items-end px-10 ml-[6vw]
          mt-14 lg:mt-0 lg:ml-[50vw]  lg:mr-10 font-logo1 text-lg lg:text-2xl"
         >

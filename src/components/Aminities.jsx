@@ -33,7 +33,7 @@ const Aminities = () => {
         What we have !
       </motion.h1>
       <motion.div
-        variants={titleVariants3}
+        variants={titleVariants2}
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}

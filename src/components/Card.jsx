@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { titleVariants4 } from "./Animations";
 
 const Card = ({ i, title, icon, color, progress, range, targetScale }) => {
   const container = useRef(null);
@@ -26,9 +27,15 @@ const Card = ({ i, title, icon, color, progress, range, targetScale }) => {
           rounded-3xl relative shadow-2xl border-1 border-slate-800`}
         >
           <div className="">
-            <h2 className="flex justify-center items-center pt-10 font-logo1 text-3xl lg:text-4xl text-slate-800">
+            <motion.h2
+              variants={titleVariants4}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              className="clipath flex justify-center items-center pt-10 font-logo1 text-3xl lg:text-4xl text-slate-800"
+            >
               {title}
-            </h2>
+            </motion.h2>
             <hr className="mx-10 lg:mx-32 mt-5 border-black" />
             <div className="flex flex-wrap justify-evenly lg:justify-center items-center px-2 py-2 mt-2 lg:px-20 lg:py-16 lg:mt-2">
               {icon.map((src, i) => {

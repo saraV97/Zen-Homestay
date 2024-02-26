@@ -40,6 +40,23 @@ const itemMain = {
     },
   },
 };
+
+const navbar1 = {
+  initial: {
+    opacity: 0,
+    y: -30,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      delay: 2,
+      staggerChildren: 0.3,
+    },
+  },
+};
+
 const titleVariants1 = {
   initial: {
     opacity: 0,
@@ -80,7 +97,22 @@ const titleVariants3 = {
     y: 0,
     transition: {
       duration: 0.6,
-      delay: 0.5,
+      delay: 0.4,
+      staggerChildren: 0.3,
+    },
+  },
+};
+const titleVariants4 = {
+  initial: {
+    opacity: 0,
+    y: 20,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      delay: 0.2,
       staggerChildren: 0.3,
     },
   },
@@ -93,4 +125,6 @@ export {
   titleVariants1,
   titleVariants2,
   titleVariants3,
+  titleVariants4,
+  navbar1,
 };

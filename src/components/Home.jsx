@@ -26,6 +26,21 @@ const Home = () => {
     }
   );
 
+  gsap.fromTo(
+    "svg",
+    {
+      y: -100,
+      opacity: 0,
+    },
+    {
+      y: 0,
+      delay: 2,
+      opacity: 1,
+      duration: 2,
+      ease: "power4.out",
+    }
+  );
+
   return (
     <div name="home" className="">
       <div>
