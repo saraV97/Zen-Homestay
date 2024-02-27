@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div
       className="p-4 lg:p-10 w-full h-[100vh] flex flex-col justify-between border-t
-    border-black rounded-t-3xl bg-[#526D82]"
+    border-black rounded-t-3xl lg:rounded-t-[5%] bg-[#526D82]"
     >
       <hr className="border-yellow-100 lg:w-[50%] lg:ml-[20rem]" />
       {/* <div className="w-full  text-[9vw] leading-[1.1] ">

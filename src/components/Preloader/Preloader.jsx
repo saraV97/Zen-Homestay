@@ -52,7 +52,7 @@ export default function Index() {
     dimension.height
   } Q${dimension.width / 2} ${dimension.height} 0 ${dimension.height}  L0 0`;
 
-  const curve = {
+  const curve1 = {
     initial: {
       d: initialPath,
       transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
@@ -85,14 +85,13 @@ export default function Index() {
           <svg className="absolute top-0 w-full h-[calc(100%+300px)]">
             <motion.path
               className="fill-slate-800 "
-              variants={curve}
+              variants={curve1}
               initial="initial"
               exit="exit"
             ></motion.path>
           </svg>
         </>
       )}
-      {/* <p className="flex text-orange-400 text-5xl absolute z-1">Loading</p> */}
     </motion.div>
   );
 }

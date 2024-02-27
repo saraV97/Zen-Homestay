@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import Card from "./Card";
 import { projects } from "./CardData";
 import { motion, useScroll } from "framer-motion";
-import { titleVariants3, titleVariants1, titleVariants2 } from "./Animations";
+import { titleVariants1, titleVariants2 } from "./Animations";
 
 const Aminities = () => {
   const container = useRef(null);

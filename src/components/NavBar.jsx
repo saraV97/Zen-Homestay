@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import socialicon from "../assets/instagram.png";
 import rooficon from "../assets/roofing.png";
 import { useState } from "react";
@@ -52,22 +51,25 @@ export default function NavBar({ sectionRefs }) {
   //     });
   //   });
   // });
+  //responsive
+  let mm = gsap.matchMedia();
 
-  gsap.fromTo(
-    ".nav",
-    {
-      y: -100,
-      opacity: 0,
-    },
-    {
-      y: 0,
-      delay: 2,
-      opacity: 1,
-      duration: 2,
-      ease: "power4.out",
-      toggleActions: "play none none none",
-    }
-  );
+  mm.add("(min-width: 800px)", () => {
+    gsap.fromTo(
+      ".nav",
+      {
+        y: -100,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        delay: 2,
+        opacity: 1,
+        duration: 2,
+        ease: "power4.out",
+      }
+    );
+  });
 
   const links = [
     // {
@@ -191,7 +193,6 @@ export default function NavBar({ sectionRefs }) {
           >
             <div className="flex flex-col h-full">
               <div className="flex justify-between">
-                {/* <h1 className="text-lg text-black">Hello</h1> */}
                 <p>
                   <img src={rooficon} alt="" width="40" height="40" />
                 </p>

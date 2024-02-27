@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useTransform, useScroll, motion } from "framer-motion";
 import Magnetic from "../Magnetic/index";
-import FullGallery from "./FullGallery";
 
 const images = [
   "1.webp",
@@ -16,6 +15,7 @@ const images = [
 ];
 
 function Page() {
+  // const navigate = useNavigate();
   const container = useRef(null);
   const [dimension, setDimension] = useState({ width: 0, height: 0 });
 
@@ -27,15 +27,8 @@ function Page() {
   const y = useTransform(scrollYProgress, [0, 1], [0, height * 0.9]);
   const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 1.4]);
   const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.2]);
-  //   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 1.4]);
+  // const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 1.4]);
   useEffect(() => {
-    // const lenis = new Lenis();
-
-    // function raf(time) {
-    //   lenis.raf(time);
-    //   requestAnimationFrame(raf);
-    // }
-
     const resize = () => {
       setDimension({ width: window.innerWidth, height: window.innerHeight });
     };
@@ -68,7 +61,7 @@ function Page() {
           <Magnetic>
             <button
               className="rounded-3xl border-2 border-black p-5
-             bg-yellow-200 hover:bg-emerald-400 m-18.5 text-3xl"
+             bg-yellow-200 hover:bg-emerald-400 m-18.5 text-3xl shadow-2xl"
             >
               <a href="/">View Gallery</a>
             </button>
@@ -98,7 +91,7 @@ const Column = ({ images, y = 0 }) => {
         return (
           <div
             key={i}
-            className="h-[100%] w-[100%] lg:w-[80%] relative rounded-lg overflow-hidden"
+            className="h-[100%] w-[100%] lg:w-[80%] relative rounded-lg overflow-hidden shadow-xl border-2"
           >
             <img
               src={`/images/${src}`}

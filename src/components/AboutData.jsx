@@ -76,7 +76,7 @@ const AboutData = () => {
                   placeholder="blur"
                   alt="image"
                   fill="true"
-                  className="object-cover rounded-lg"
+                  className="object-cover rounded-lg shadow-2xl"
                 />
               </motion.div>
             );
