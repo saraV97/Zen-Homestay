@@ -48,7 +48,7 @@ function Page() {
       <div
         ref={container}
         className="w-[370px] xsm:w-[400px] md:h-[100vh] md:w-full relative flex gap-[2vw]
-         p-[2vw] mb-10 box-border overflow-hidden xsm:m-2 md:m-0 transform-gpu"
+         p-[2vw] mb-10 box-border overflow-hidden xsm:m-2 md:m-0"
       >
         <Column images={[images[0], images[1], images[2]]} y={y} />
         <Column images={[images[3], images[4], images[5]]} y={y2} />
@@ -61,7 +61,7 @@ function Page() {
           <Magnetic>
             <button
               className="rounded-3xl border-2 border-black p-5
-             bg-yellow-200 hover:bg-emerald-400 m-18.5 text-3xl shadow-2xl"
+             bg-yellow-200 hover:bg-[#ffedd5] m-18.5 text-3xl shadow-2xl"
             >
               <a href="/">View Gallery</a>
             </button>
@@ -91,13 +91,13 @@ const Column = ({ images, y = 0 }) => {
         return (
           <div
             key={i}
-            className="h-[100%] w-[100%] lg:w-[80%] relative rounded-lg overflow-hidden shadow-xl border-2"
+            className="h-[100%] w-[100%] lg:w-[80%] relative rounded-lg overflow-hidden shadow-xl border border-black"
           >
             <img
               src={`/images/${src}`}
               alt="image"
               fill="true"
-              className="object-cover h-full"
+              className="object-cover h-full "
             />
           </div>
         );

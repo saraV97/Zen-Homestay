@@ -19,7 +19,7 @@ const Aminities = () => {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="flex justify-center items-center font-semibold text-5xl"
+        className="flex justify-center font-marvel items-center font-semibold text-7xl"
       >
         Aminities
       </motion.div>
@@ -28,7 +28,7 @@ const Aminities = () => {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="m-0 mt-[20px] font-medium leading-[2vw]  text-3xl flex justify-center items-center"
+        className="m-0 mt-[20px] font-marvel text-opacity-5 font-medium leading-[2vw]  text-4xl flex justify-center items-center"
       >
         What we have !
       </motion.h1>
@@ -37,8 +37,8 @@ const Aminities = () => {
         initial="initial"
         whileInView="animate"
         viewport={{ once: true }}
-        className="flex justify-center underline font-logo1 
-      items-centerfont-semibold text-2xl lg:text-4xl pt-5 text-slate-800"
+        className="flex justify-center underline
+      items-centerfont-semibold text-2xl lg:text-4xl font-marvel pt-5 text-slate-800 "
       >
         Spacious Two-Bedroom Getaway
       </motion.div>

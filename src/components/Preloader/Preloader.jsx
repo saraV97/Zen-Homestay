@@ -74,17 +74,17 @@ export default function Index() {
       {dimension.width > 0 && (
         <>
           <motion.p
-            className="flex text-white text-5xl absolute z-[99]"
+            className="flex text-Black text-5xl absolute z-[99]"
             variants={opacity}
             initial="initial"
             animate="enter"
           >
-            <span className="block w-3 h-3 bg-yellow-200 rounded-full mr-[10px] pt-10 "></span>
+            <span className="block w-3 h-3 bg-green-600 rounded-full mr-[10px] pt-10 "></span>
             {words[index]}
           </motion.p>
           <svg className="absolute top-0 w-full h-[calc(100%+300px)]">
             <motion.path
-              className="fill-slate-800 "
+              className=" fill-orange-100 "
               variants={curve1}
               initial="initial"
               exit="exit"

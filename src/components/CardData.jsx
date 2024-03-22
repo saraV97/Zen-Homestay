@@ -51,7 +51,7 @@ export const projects = [
       { src: { books }, name: "Books" },
       { src: { workplace }, name: "Dedicated Workspace" },
     ],
-    color: "bg-[#FFDEB4]",
+    color: "bg-[#FFEECC]",
   },
   {
     title: "Rooms",
@@ -64,7 +64,7 @@ export const projects = [
       { src: { fan }, name: "Fan" },
       { src: { screen }, name: "Window Blinds" },
     ],
-    color: "bg-[#FFB4B4]",
+    color: "bg-[#FFDDCC]",
   },
   {
     title: "Kitchen and dining",
@@ -75,7 +75,7 @@ export const projects = [
       { src: { microwave }, name: "Oven" },
       { src: { coffee }, name: "Coffee" },
     ],
-    color: "bg-[#B2A4FF]",
+    color: "bg-[#FFCCCC]",
   },
   {
     title: "Location Features",
@@ -84,6 +84,6 @@ export const projects = [
       { src: { parking }, name: "Free On Road Parking" },
       { src: { longstay }, name: "Long Stay Available" },
     ],
-    color: "bg-[#BA90C6]",
+    color: "bg-[#FEBBCC]",
   },
 ];

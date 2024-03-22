@@ -24,7 +24,7 @@ const Card = ({ i, title, icon, color, progress, range, targetScale }) => {
         <motion.div
           style={{ scale, top: `calc(-5% + ${i * 40}px)` }}
           className={`${color}  w-[370px] h-[620px] md:w-[550px] lg:w-[1300px] lg:h-[650px] 
-          rounded-3xl relative shadow-2xl border-1 border-slate-800`}
+          rounded-3xl relative shadow-2xl border border-slate-800`}
         >
           <div className="">
             <motion.h2
@@ -32,7 +32,7 @@ const Card = ({ i, title, icon, color, progress, range, targetScale }) => {
               initial="initial"
               whileInView="animate"
               viewport={{ once: true }}
-              className="clipath flex justify-center items-center pt-10 font-logo1 text-3xl lg:text-4xl text-slate-800"
+              className="clipath flex justify-center items-center pt-10 font-marvel text-opacity-80 text-3xl lg:text-4xl text-slate-800"
             >
               {title}
             </motion.h2>
@@ -46,7 +46,7 @@ const Card = ({ i, title, icon, color, progress, range, targetScale }) => {
                     className="lg:w-40 lg:px-5 lg:mt-0 w-[75px] mx-5 mt-5"
                   >
                     <img src={Object.values(src.src)} />
-                    <p className="lg:text-2xl text-l justify-center items-center flex p-2 lg:p-5 text-slate-900">
+                    <p className="lg:text-2xl text-l justify-center font-marvel text-center items-center flex p-2 lg:p-5 text-slate-900">
                       {src.name}
                     </p>
                   </motion.div>

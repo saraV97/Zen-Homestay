@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Aminities from "./components/Aminities";
 import Gallery from "./components/gallery/Gallery.jsx";
+import Gall from "./components/gallery/Gall.jsx";
 import NavBar from "./components/NavBar";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -65,7 +66,7 @@ function App() {
       <section
         id="home"
         className="min-h-screen w-full flex items-center justify-center 
-          custom-bg-class bg-cover bg-center sticky top-0 "
+          md:custom-bg-class mob-bg-class bg-blend-darken bg-cover bg-center sticky top-0 "
         data-bgcolor="#FFFFFF"
       >
         <Home />
@@ -74,8 +75,8 @@ function App() {
         // forwardedRef={(el) => (sectionRefs.current[0] = el)}
         id="about"
         className="min-h-screen w-full relative flex items-center justify-center
-        border-t-2 rounded-t-3xl lg:rounded-t-[5%] bg-[#F1F0E8]"
-        data-bgcolor="#F1F0E8"
+        border-t-2 rounded-t-3xl bg-[#E2BFB3] "
+        data-bgcolor="#ffedd5"
       >
         <About />
       </section>
@@ -83,28 +84,29 @@ function App() {
         id="aminities"
         className="relative flex items-center justify-center bg-[#e6dfed]"
         // data-bgcolor="#EEE0C9"
-        data-bgcolor="#e6dfed"
+        data-bgcolor="#F7DED0"
       >
         <Aminities />
       </section>
       <section
         id="gallery"
-        className="relative bg-[#d8e7ed]"
+        className="relative bg-[#F7DED0]"
         // className="min-h-screen w-full relative flex items-center justify-center"
-        data-bgcolor="#d8e7ed"
+        data-bgcolor="#FEECE2"
       >
-        <Gallery />
+        <Gall />
       </section>
-      <sectionFooter
+      <section
         id="footer"
-        className="min-h-screen w-full relative flex items-center justify-center bg-[#d8e7ed]
+        className=" w-full relative flex items-center justify-center bg-slate-200
         lg:pt-20"
+        data-bgcolor="#decdb6"
         // data-bgcolor="#526D82"
         // data-bgcolor="#96B6C5"
         // bg-[#FFE5E5]
       >
         <Footer />
-      </sectionFooter>
+      </section>
     </div>
   );
 }

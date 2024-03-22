@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {},
     screens: {
+      xxs: "376px",
       xsm: "425px",
       sm: "640px",
       md: "768px",
@@ -15,6 +16,8 @@ export default {
       navFont: ["Lora"],
       damion: ["Damion"],
       grotesk: ["HankenGrotesk"],
+      marvel: ["Marvel"],
+      belgrano: ["Belograno"],
     },
     // colors: {
     //   "my-gray": "#BED1CF",

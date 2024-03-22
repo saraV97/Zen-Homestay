@@ -1,6 +1,8 @@
 import React from "react";
 import { gsap } from "gsap";
 import splitType from "https://cdn.skypack.dev/split-type@0.3.3";
+import { motion } from "framer-motion";
+import { titleVariants3 } from "./Animations";
 
 const Home = () => {
   const ourText = new splitType(".reveal", { types: "chars" });
@@ -38,23 +40,37 @@ const Home = () => {
   );
 
   return (
-    <div name="home" className="">
+    <div
+      name="home"
+      className="relative bg-[rgba(58,58,58,0.29)] w-full h-screen "
+    >
       <div>
-        <div className="w-full text-5xl lg:text-[10vw] leading-[1.1] py-40 px-5 lg:px-80">
-          <span className="reveal text-left font-bold text-white font-grotesk clipath">
+        <div className="w-full flex flex-col justify-center items-center mt-28 text-5xl xxs:text-6xl lg:text-[10vw] leading-[1.1] py-40 px-5">
+          <span className="reveal text-center font-bold text-black opacity-70 font-grotesk clipath">
             Your Escape,{" "}
           </span>
           <div className="text-center">
-            <span className="reveal text-yellow-200 font-logo1">
+            <span className="reveal text-yellow-300 font-logo1">
               Our Pleasure.
             </span>
+          </div>
+          <div className="flex flex-col justify-center items-center m-5 p-5">
+            <motion.p
+              variants={titleVariants3}
+              initial="initial"
+              animate="animate"
+              className=" mx-auto mb-10 max-w-25xl font-marvel text-sm xxs:text-lg text-break xs:text-base lg:text-xl text-gray-200 leading-1` "
+            >
+              Discover comfort, relaxation in our cozy house. Book your stay now
+              and experience serenity at its finest.
+            </motion.p>
           </div>
           <div className="lg:hidden flex justify-center pt-20 ">
             {/* <Magnetic> */}
             <a href="#footer">
               <button
-                className=" flex justify-center items-center border-2 rounded-2xl border-slate-700 py-1 px-3
-           text-slate-800  bg-yellow-200  hover:bg-emerald-400 text-xl"
+                className=" flex justify-center items-center border rounded-xl border-slate-700 py-1 px-3
+           text-slate-800  bg-gray-100 bg-opacity-80  hover:bg-emerald-400 text-xl"
               >
                 <p>Call to Book</p>
               </button>

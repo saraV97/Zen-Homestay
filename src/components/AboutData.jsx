@@ -1,8 +1,8 @@
 "use client";
 import { useRef } from "react";
-import Picture1 from "../assets/4.webp";
-import Picture2 from "../assets/5.webp";
-import Picture3 from "../assets/6.webp";
+// import Picture1 from "../assets/4.webp";
+// import Picture2 from "../assets/5.webp";
+// import Picture3 from "../assets/6.webp";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { titleVariants1, titleVariants2 } from "./Animations";
 
@@ -20,15 +20,15 @@ const AboutData = () => {
 
   const images = [
     {
-      src: Picture1,
+      src: "https://res.cloudinary.com/dg80cvwhy/image/upload/v1711108443/Zen%20Homestay/bygpzhzp4qwzj9n6bu3y.jpg",
       y: 0,
     },
     {
-      src: Picture2,
+      src: "https://res.cloudinary.com/dg80cvwhy/image/upload/v1711108442/Zen%20Homestay/epfqzuuqw9pdqwcv0pxs.jpg",
       y: lg,
     },
     {
-      src: Picture3,
+      src: "https://res.cloudinary.com/dg80cvwhy/image/upload/v1711108440/Zen%20Homestay/vbydz6pzzaksupigbnbg.jpg",
       y: md,
     },
   ];
@@ -44,7 +44,7 @@ const AboutData = () => {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="text-5xl flex justify-center items-center font-semibold text-slate-800"
+          className="text-7xl flex justify-center items-center font-marvel font-semibold text-slate-800"
         >
           About Us
         </motion.h1>
@@ -53,7 +53,7 @@ const AboutData = () => {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="m-0 mt-[10px] font-medium leading-[2vw]  text-3xl flex justify-center items-center"
+          className="m-0 mt-[10px] text-opacity-5 font-medium leading-[2vw] font-marvel  text-4xl flex justify-center items-center"
         >
           Who are we ?
         </motion.h1>
@@ -76,7 +76,7 @@ const AboutData = () => {
                   placeholder="blur"
                   alt="image"
                   fill="true"
-                  className="object-cover rounded-lg shadow-2xl"
+                  className="object-cover rounded-lg shadow-2xl border border-black"
                 />
               </motion.div>
             );
@@ -88,11 +88,11 @@ const AboutData = () => {
           whileInView="animate"
           viewport={{ once: true }}
           // style={{ y: sm }}
-          className="flex flex-col relative justify-end items-end px-10 ml-[6vw]
-         mt-14 lg:mt-0 lg:ml-[50vw]  lg:mr-10 font-logo1 text-lg lg:text-2xl"
+          className="flex flex-col relative justify-end items-end px-10 py-5 mx-5
+         mt-14 lg:mt-0 lg:ml-[50vw] lg:mr-10 font-logo1 text-lg lg:text-2xl border shadow-xl border-black rounded-3xl bg-[#e9d3b4]"
         >
           <p>
-            Welcome to <span className="text-emerald-400">Zen Homestay</span>,
+            Welcome to <span className="text-emerald-600">Zen Homestay</span>,
             your serene escape in the heart of{" "}
             <span className=" text-sky-600">Pondicherry</span>. Nestled amidst
             peaceful residential, our homestay offers a peaceful retreat where
@@ -102,7 +102,7 @@ const AboutData = () => {
 
           <p>
             At Zen Homestay, we pride ourselves on providing a{" "}
-            <span className="text-emerald-400">
+            <span className="text-emerald-600">
               cozy atmosphere and personalized hospitality
             </span>
             . Our rooms have attached bath along with spacious common hall and
@@ -122,7 +122,7 @@ const AboutData = () => {
             Homestay during your stay.
           </p>
           <br />
-          <p className="lg:mr-[14vw] lg:ml-0 mr-10 text-emerald-400 text-2xl lg:text-[2rem]">
+          <p className="lg:mr-[14vw] lg:ml-0 mr-10 text-emerald-600 text-2xl lg:text-[2rem]">
             We can't wait to welcome you!
           </p>
         </motion.div>

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -23,11 +24,15 @@
 }
 @layer utilities {
 .custom-bg-class{
-    background-image: url(./assets/pexels1.webp);
+    background-image: url(./assets/hero.jpg);
 
   }
   .clipath{ clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);}
+  .mob-bg-class{
+    background-image: url(./assets/pexels-la.jpg);
 
+  }
+  
 /* .section-heading {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
   } */
@@ -122,4 +127,5 @@
     /* -ms-overflow-style: none;  IE and Edge */
     /* scrollbar-width: none;  Firefox */
 /* } */
+
 }
