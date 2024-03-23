@@ -176,7 +176,7 @@ export default function NavBar({ sectionRefs }) {
         </div>
         <div
           // ref={ref}
-          className="cursor-pointer md:hidden border border-slate-800 rounded-xl text-md mr-5 px-2 py-1 text-slate-800 font-logo1 text-2xl"
+          className="cursor-pointer md:hidden border border-slate-800 rounded-xl text-md mr-5 px-2 py-1 text-slate-800 font-marvel text-2xl"
           onClick={toggleMenu}
         >
           Menu
@@ -199,7 +199,7 @@ export default function NavBar({ sectionRefs }) {
                     <img src={rooficon} alt="" width="40" height="40" />
                   </p>
                   <p
-                    className="cursor-pointer text-md text-slate-800 px-2 pt-2 border border-slate-800 rounded-xl"
+                    className="cursor-pointer text-md text-slate-800 px-2 pt-1 border font-marvel text-2xl border-slate-800 rounded-xl"
                     onClick={toggleMenu}
                   >
                     Close

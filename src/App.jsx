@@ -75,7 +75,7 @@ function App() {
         // forwardedRef={(el) => (sectionRefs.current[0] = el)}
         id="about"
         className="min-h-screen w-full relative flex items-center justify-center
-        border-t-2 rounded-t-3xl bg-[#E2BFB3] "
+         rounded-t-3xl bg-[#E2BFB3] "
         data-bgcolor="#ffedd5"
       >
         <About />

@@ -76,7 +76,7 @@ const AboutData = () => {
                   placeholder="blur"
                   alt="image"
                   fill="true"
-                  className="object-cover rounded-lg shadow-2xl border border-black"
+                  className="object-cover rounded-lg shadow-2xl border border-slate-600"
                 />
               </motion.div>
             );
@@ -89,7 +89,7 @@ const AboutData = () => {
           viewport={{ once: true }}
           // style={{ y: sm }}
           className="flex flex-col relative justify-end items-end px-10 py-5 mx-5
-         mt-14 lg:mt-0 lg:ml-[50vw] lg:mr-10 font-logo1 text-lg lg:text-2xl border shadow-xl border-black rounded-3xl bg-[#e9d3b4]"
+         mt-14 lg:mt-0 lg:ml-[50vw] lg:mr-10 font-logo1 text-lg lg:text-2xl border shadow-xl border-slate-600 rounded-3xl bg-[#e9d3b4]"
         >
           <p>
             Welcome to <span className="text-emerald-600">Zen Homestay</span>,

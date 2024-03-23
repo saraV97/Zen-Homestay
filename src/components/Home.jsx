@@ -45,7 +45,7 @@ const Home = () => {
       className="relative bg-[rgba(58,58,58,0.29)] w-full h-screen "
     >
       <div>
-        <div className="w-full flex flex-col justify-center items-center mt-28 text-5xl xxs:text-6xl lg:text-[10vw] leading-[1.1] py-40 px-5">
+        <div className="w-full flex flex-col justify-center items-center mt-28 text-5xl xxs:text-6xl lg:text-[10vw] leading-[1.1] py-20 px-5">
           <span className="reveal text-center font-bold text-black opacity-70 font-grotesk clipath">
             Your Escape,{" "}
           </span>
@@ -59,18 +59,18 @@ const Home = () => {
               variants={titleVariants3}
               initial="initial"
               animate="animate"
-              className=" mx-auto mb-10 max-w-25xl font-marvel text-sm xxs:text-lg text-break xs:text-base lg:text-xl text-gray-200 leading-1` "
+              className=" mx-auto max-w-25xl font-marvel text-sm xxs:text-lg text-break xs:text-base lg:text-xl text-gray-200 leading-1` "
             >
               Discover comfort, relaxation in our cozy house. Book your stay now
               and experience serenity at its finest.
             </motion.p>
           </div>
-          <div className="lg:hidden flex justify-center pt-20 ">
+          <div className="lg:hidden flex justify-center ">
             {/* <Magnetic> */}
             <a href="#footer">
               <button
                 className=" flex justify-center items-center border rounded-xl border-slate-700 py-1 px-3
-           text-slate-800  bg-gray-100 bg-opacity-80  hover:bg-emerald-400 text-xl"
+           text-slate-800 font-marvel  bg-gray-100 bg-opacity-80  hover:bg-emerald-400 text-xl"
               >
                 <p>Call to Book</p>
               </button>
