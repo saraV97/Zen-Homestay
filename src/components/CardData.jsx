@@ -32,12 +32,12 @@ export const projects = [
   {
     title: "Bathroom and laundry",
     icon: [
-      { src: { shampoo }, name: "Shampoo" },
-      { src: { soap }, name: "Soap" },
+      // { src: { shampoo }, name: "Shampoo" },
+      // { src: { soap }, name: "Soap" },
       { src: { essentials }, name: "Essentials" },
       { src: { waterheater }, name: "Hot Water" },
       { src: { bidet }, name: "Bidet" },
-      { src: { hanger }, name: "Hangers" },
+      // { src: { hanger }, name: "Hangers" },
       { src: { iron }, name: "Iron" },
     ],
     color: "bg-[#FDF7C3]",
@@ -46,7 +46,7 @@ export const projects = [
     title: "Entertainment and Office",
     icon: [
       { src: { tv }, name: "TV" },
-      { src: { boardgames }, name: "Board Games" },
+      // { src: { boardgames }, name: "Board Games" },
       { src: { wifi }, name: "Wifi" },
       { src: { books }, name: "Books" },
       { src: { workplace }, name: "Dedicated Workspace" },

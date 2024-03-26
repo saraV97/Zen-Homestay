@@ -91,6 +91,15 @@ const AboutData = () => {
           className="flex flex-col relative justify-end items-end px-10 py-5 mx-5
          mt-14 lg:mt-0 lg:ml-[50vw] lg:mr-10 font-logo1 text-lg lg:text-2xl border shadow-xl border-slate-600 rounded-3xl bg-[#e9d3b4]"
         >
+          <div className="lg:hidden mb-10">
+            <img
+              src="https://res.cloudinary.com/dg80cvwhy/image/upload/v1711108442/Zen%20Homestay/epfqzuuqw9pdqwcv0pxs.jpg"
+              placeholder="blur"
+              alt="image"
+              fill="true"
+              className="object-cover rounded-lg shadow-2xl border border-slate-600"
+            />
+          </div>
           <p>
             Welcome to <span className="text-emerald-600">Zen Homestay</span>,
             your serene escape in the heart of{" "}

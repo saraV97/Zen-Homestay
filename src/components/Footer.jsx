@@ -48,7 +48,7 @@ const Footer = () => {
                 India
               </span>
               <p className="font-bold font-marvel text-xl">Phone: </p>
-              <p className="text-slate-800 font-marvel text-2xl ">8220791901</p>
+              <p className="text-slate-800 font-marvel text-2xl ">9442396897</p>
               <br />
               <p className="font-bold font-marvel text-xl"> Email:</p>
               <p className="text-slate-800 font-marvel text-2xl">
