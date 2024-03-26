@@ -55,6 +55,15 @@ const Footer = () => {
                 {" "}
                 vsara25597@gmail.com
               </p>
+              <div className="mt-4">
+                <a
+                  href="https://www.airbnb.co.in/rooms/928509496737738314?check_in=2024-03-30&check_out=2024-03-31&guests=1&adults=1&s=67&unique_share_id=736540e2-5e68-43de-95f0-27981e4ca952"
+                  className="hover:bg-pink-100 font-marvel text-2xl border border-black p-2 rounded-xl bg-white text-pink-500 font-bold"
+                >
+                  {" "}
+                  Book on Airbnb
+                </a>
+              </div>
             </div>
             <div className="flex items-center">
               <Magnetic>

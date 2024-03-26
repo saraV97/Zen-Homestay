@@ -11,7 +11,7 @@ const Card = ({ i, title, icon, color, progress, range, targetScale }) => {
   });
   const imageScale = useTransform(scrollYProgress, [0, 1], [1.3, 1]);
   const scale = useTransform(progress, range, [1, targetScale]);
-  console.log(imageScale);
+  // console.log(imageScale);
   // const size = i * 25;
 
   // const icons = i;
@@ -42,7 +42,10 @@ const Card = ({ i, title, icon, color, progress, range, targetScale }) => {
               {icon.map((src, i) => {
                 return (
                   <motion.div
-                    style={{ opacity: scrollYProgress, scale: imageScale }}
+                    style={{
+                      opacity: scrollYProgress,
+                      // scale: imageScale
+                    }}
                     key={i}
                     className="lg:w-40 lg:px-5 lg:mt-0 w-[75px] mx-5 mt-5 transform-gpu"
                   >
